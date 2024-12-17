@@ -1,0 +1,154 @@
+@import url('./publick.css');
+@import url('../static/icont/fonticiont/iconfont.css');
+
+.leftNav {
+  width: 972px !important;
+}
+
+.leftNavTop {
+  display: flex;
+}
+
+.leftNav-title {
+  margin-right: 64px;
+}
+
+.TopSearch {
+  width: 560px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #0c0d0f;
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-size: 13px;
+}
+.TopSearch input {
+  border: none;
+  font-size: 14px;
+  color: var(--theme-text-color);
+  font-weight: 500;
+  flex: 1;
+}
+.TopSearch input::placeholder {
+  color: var(--theme-text-color);
+  font-weight: 500;
+}
+.TopSearch input:focus {
+  outline: none;
+}
+.SerchBtn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.SerchBtn span {
+  margin-left: 7px;
+}
+
+/* ---------------------- 小说阅读区域 ------------------------ */
+.chapter {
+  text-align: center;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  margin-bottom: 40px
+;
+}
+.chapter .chapterTiele {
+  font-size: 24px;
+  font-weight: 500;
+}
+.chapter .chapterInfo {
+  margin: 20px 0;
+}
+
+.novelReading {
+  margin: 40px 0;
+  padding: 36px 50px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 13px;
+  font-size: 15px;
+}
+
+
+
+.rightContent {
+  width: 468px;
+}
+.rightTopNav .TopNav {
+  
+  width: 428px;
+}
+
+/* 文章列表 */
+.novelContent {
+  margin-top: 50px;
+}
+.novelContent .recomdenTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.novelList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.novelList .novelItem {
+  width: 384px;
+  height: 164px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.novelList .novelItem .novelImg {
+  width: 120px;
+  height: 100%;
+}
+.novelList .novelItem .novelImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.novelList .novelItem .novelInfo {
+  flex: 1;
+  padding:0 12px;
+}
+.novelList .novelItem .novelInfo .novelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.novelItem .novelInfo .novelTop .noveTitle {
+  max-width: 140px;
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  /* 显示的行数 */
+  -webkit-line-clamp: 1;
+}
+.novelItem .novelInfo .novelTop .author {
+  font-size: 16px;
+  color: var(--theme-smText-color);
+}
+.novelItem .novelInfo .novelDesc {
+  color: var(--theme-smText-color);
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  /* 显示的行数 */
+  -webkit-line-clamp: 5;
+}

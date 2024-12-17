@@ -1,0 +1,29 @@
+section.section
+  header.section__header
+    h3.section__h3 offset
+  div.section__content
+    h4.section__h4 Description
+    dl.section__dl
+      dt.section__dt Type：
+      dd.section__dd Number
+    dl.section__dl
+      dt.section__dt Default：
+      dd.section__dd 30
+    p 可选，用来指定提示信息距离窗口顶部的 top 数值，单位：px。
+    p 说明：如果使用 Message.info()、Message.success()、Message.warning() 和 Message.error() 4 个静态方法配置 offset 值，message.js 会自动定位多个提示框的 offset 值。
+    pre.section__pre
+      code.section__code.
+        // 导入 Message 模块
+        import Message from '@yaohaixiao/message.js/message'
+
+        // 不设置则为默认：30
+        const message = new Message({
+          id: 'info-message-001',
+          message: '可选，用来指定提示信息距离窗口顶部的 top 数值。'
+        })
+
+        const message = new Message({
+          id: 'info-message-002',
+          offset: 40,
+          message: '可选，用来指定提示信息距离窗口顶部的 top 数值。'
+        })

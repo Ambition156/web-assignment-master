@@ -1,0 +1,97 @@
+@import url('./publick.css');
+@import url('../static/icont/fonticiont/iconfont.css');
+
+/* 分类导航 */
+.classifyNav {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.classifyNav .classifyList {
+  display: flex;
+  align-items: center;
+}
+.classifyNav .classifyList .classifyItem {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--theme-smText-color);
+  margin-right: 40px;
+  
+  transition: color .7s ease;
+}
+.classifyNav .classifyList .classifyItem:hover {
+  color: var(--theme-Text-color);
+}
+.classifyNav .classifyList .active {
+  color: var(--theme-Text-color);
+}
+
+/* 文章列表 */
+.novelList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.novelList .novelItem {
+  float: left;
+  /* align-items: center; */
+  width: 384px;
+  height: 164px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-right: 22px;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* 将边界的外边距改为0 */
+.novelList .novelItem:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.novelList .novelItem .novelImg {
+  width: 120px;
+  height: 100%;
+}
+.novelList .novelItem .novelImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.novelList .novelItem .novelInfo {
+  flex: 1;
+  padding:0 12px;
+}
+.novelList .novelItem .novelInfo .novelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.novelItem .novelInfo .novelTop .noveTitle {
+  max-width: 140px;
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  /* 显示的行数 */
+  -webkit-line-clamp: 1;
+}
+.novelItem .novelInfo .novelTop .author {
+  font-size: 16px;
+  color: var(--theme-smText-color);
+}
+.novelItem .novelInfo .novelDesc {
+  color: var(--theme-smText-color);
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  /* 显示的行数 */
+  -webkit-line-clamp: 5;
+}

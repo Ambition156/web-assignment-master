@@ -1,0 +1,71 @@
+@import url('./publick.css');
+@import url('../static/icont/fonticiont/iconfont.css');
+
+/* 分类导航 */
+.classifyNav {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.classifyNav .classifyList {
+  display: flex;
+  align-items: center;
+}
+.classifyNav .classifyList .classifyItem {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--theme-smText-color);
+  margin-right: 40px;
+  
+  transition: color .7s ease;
+}
+.classifyNav .classifyList .classifyItem:hover {
+  color: var(--theme-Text-color);
+}
+.classifyNav .classifyList .active {
+  color: var(--theme-Text-color);
+}
+
+/* ------------------------------- 图片列表 ------------------------------- */
+.imgList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.imgList .imgItem {
+  float: left;
+  width: 280px;
+  height: 355px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/* 文字描述 */
+.imgList .imgItem .imgDesc {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .5) 100%);
+  transition: all .3s ease;
+  opacity: 0;
+}
+.imgList .imgItem:hover .imgDesc {
+  bottom: 0;
+  opacity: 1;
+}
+
+.imgList .imgItem:nth-of-type(4n) {
+  margin-right: 0px;
+}
+.imgList .imgItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

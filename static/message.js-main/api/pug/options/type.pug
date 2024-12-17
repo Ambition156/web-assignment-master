@@ -1,0 +1,52 @@
+section.section
+  header.section__header
+    h3.section__h3 type
+  div.section__content
+    h4.section__h4 Description
+    dl.section__dl
+      dt.section__dt Type：
+      dd.section__dd String
+    dl.section__dl
+      dt.section__dt Default：
+      dd.section__dd 'info'
+    p 可选，指定提示信息的类型，message.js 有 4 中类型提示：
+    ul
+      li info：普通提示信息；
+      li success：成功提示信息；
+      li warning：警告提示信息；
+      li error：错误提示信息；
+    p 另外，message.js 还提供了 Message.info()、Message.success()、Message.warning() 和 Message.error() 4 个静态方法，以对应的类型显示提示信息。
+    pre.section__pre
+      code.section__code.
+        // 导入 Message 模块
+        import Message from '@yaohaixiao/message.js/message'
+
+        // default UI 效果，普通提示信息
+        const message = new Message({
+          round: true,
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })
+
+        // light UI 效果，成功提示信息
+        const message = new Message({
+          effect: 'light',
+          round: true,
+          type: 'success',
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })
+
+        // light UI 效果，错误提示信息
+        const message = new Message({
+          effect: 'light',
+          round: true,
+          type: 'error',
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })
+
+        // plain UI 效果，警告提示信息
+        const message = new Message({
+          effect: 'plain',
+          round: true,
+          type: 'warning',
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })

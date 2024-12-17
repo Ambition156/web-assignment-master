@@ -1,0 +1,24 @@
+section.section
+  header.section__header
+    h3.section__h3 isClosed()
+  div.section__content
+    h4.section__h4 Description
+    p isClosed() 方法返回 Message 实例的 closed 属性，用于判断提示是否已关闭。
+    h4.section__h4 Returns
+    dl.section__dl
+      dt.section__dt Type：
+      dd.section__dd Boolean
+    p 是否被关闭。
+    pre.section__pre
+      code.section__code.
+        // 导入 Message 模块
+        import Message from '@yaohaixiao/message.js/message'
+
+        const message = new Message({
+          duration: 0,
+          message: 'isClosed() 方法返回 Message 实例的 closed 属性，用于判断提示是否已关闭。'
+        })
+
+        console.log(message.isClosed()) // -> false
+        message.close()
+        console.log(message.isClosed()) // -> true

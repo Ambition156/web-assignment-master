@@ -1,0 +1,38 @@
+section.section
+  header.section__header
+    h3.section__h3 round
+  div.section__content
+    h4.section__h4 Description
+    dl.section__dl
+      dt.section__dt Type：
+      dd.section__dd Boolean
+    dl.section__dl
+      dt.section__dt Default：
+      dd.section__dd false
+    p 可选，用来指定提示框是的边角是否以圆形展示。
+    pre.section__pre
+      code.section__code.
+        // 导入 Message 模块
+        import Message from '@yaohaixiao/message.js/message'
+
+        // default UI 效果，并且是圆形边框
+        const message = new Message({
+          round: true,
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })
+
+        // light UI 效果，并且是圆形边框
+        const message = new Message({
+          effect: 'light',
+          round: true,
+          type: 'success',
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })
+
+        // plain UI 效果，并且是圆形边框
+        const message = new Message({
+          effect: 'plain',
+          round: true,
+          type: 'warning',
+          message: '可选，指定提示信息的 UI 效果类型。'
+        })

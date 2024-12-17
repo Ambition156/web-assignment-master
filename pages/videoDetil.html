@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>视频详细页面</title>
+    <link rel="stylesheet" href="../static/message.js-main/message.min.css" />
+    <link rel="stylesheet" href="../style/videoDetil.css" />
+  </head>
+  <body>
+    <div class="content">
+      <!-- 左侧导航栏 -->
+      <div class="leftNav">
+        <!-- 左侧TOP -->
+        <div class="leftNavTop">
+          <!-- logo 加标题 -->
+          <div class="leftNav-title">
+            <img src="../static/img/logo/画板 1.png" alt="" />
+            <span class="leftNav-title-text">即时视频</span>
+          </div>
+          <!-- 搜索框 -->
+          <div class="TopSearch">
+            <input type="text" placeholder="南航开通海口往返青岛" />
+            <div class="SerchBtn">
+              <img src="../static/img/搜索.png" alt="" />
+              <span>搜索</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- video播放器 -->
+        <div class="videoPlayer">
+          <!-- 视频播放器 -->
+          <div id="mse"></div>
+          <!-- 视频标题 -->
+          <div class="videoTitle">
+            ｜4K·60Hz｜Apple苹果2019宣传片《了不起的设计》
+          </div>
+          <div class="videoShare">
+            <span>
+              <i class="iconfont icon-dianzan_kuai"></i>
+              270
+            </span>
+            <span>
+              <i class="iconfont icon-shoucang"></i>
+              收藏
+            </span>
+            <span>
+              <i class="iconfont icon-fenxiang"></i>
+              分享
+            </span>
+          </div>
+        </div>
+
+        <!-- 评论区 -->
+        <div class="commentContent">
+          <div class="Total">共17条评论</div>
+          <!-- 评论输入框 -->
+          <div class="comment">
+            <div class="headlogo">
+              <img src="../static/img/logo/headlogo (1).jpg" alt="" />
+            </div>
+            <div class="commentInput">
+              <textarea placeholder="请输入评论内容吧~" rows="8"></textarea>
+              <a href="#" class="sendBtn">发送</a>
+            </div>
+          </div>
+          <!-- 评论列表 -->
+          <ul class="commentList">
+            <li class="commentItem">
+              <div class="headlogo">
+                <img src="../static/img/logo/headlogo (1).jpg" alt="" />
+              </div>
+              <div class="otherComment">
+                <div class="otherName">
+                  <p class="otherUserName">只是陌生的路人甲</p>
+                  <p class="otherUserInfo">
+                    <span>2天前</span> <span>江苏</span>
+                  </p>
+                </div>
+                <div class="otherCommentText">
+                  摄影本身是个蛮简单的事，你看到什么就能拍到什么，困难的地方在“看到”。
+                </div>
+              </div>
+            </li>
+            <li class="commentItem">
+              <div class="headlogo">
+                <img src="../static/img/logo/headlogo (1).jpg" alt="" />
+              </div>
+              <div class="otherComment">
+                <div class="otherName">
+                  <p class="otherUserName">只是陌生的路人甲</p>
+                  <p class="otherUserInfo">
+                    <span>2天前</span> <span>江苏</span>
+                  </p>
+                </div>
+                <div class="otherCommentText">
+                  摄影本身是个蛮简单的事，你看到什么就能拍到什么，困难的地方在“看到”。
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+          <div class="footerLeft">
+            <div class="footerTop">友情连接</div>
+            <ul class="footerList">
+              <li class="footerItem">
+                <a href="#">即时网</a>
+              </li>
+              <li class="footerItem">
+                <a href="#">即时影视模板</a>
+              </li>
+              <li class="footerItem">
+                <a href="#">即时主题设计</a>
+              </li>
+              <li class="footerItem">
+                <a href="#">大虾壁纸</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerRight">
+            <div class="footerTop">合作联系</div>
+            <ul class="footerList">
+              <li class="footerItem">
+                <a href="#">QQ: 2336558626</a>
+              </li>
+              <li class="footerItem">
+                <a href="#">邮箱: 2336558626qq.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 商标 -->
+        <div class="trademark">© 2023 JISHI - All Rights Reserved</div>
+      </div>
+
+      <!-- 右侧内容视频推荐 -->
+      <div class="rightContent">
+        <!-- 右侧顶部导航栏 -->
+        <div class="rightTopNav">
+          <div class="TopNav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="../static/img/钻石.png" alt="" />
+                  <span>会员</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../static/img/收藏文件.png" alt="" />
+                  <span>收藏</span>
+                </a>
+              </li>
+              <li class="userName">
+                <a href="#">
+                  <svg
+                    t="1717161226654"
+                    class="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="5473"
+                    width="128"
+                    height="128"
+                  >
+                    <path
+                      d="M502.496 63.136c125.888 0 227.936 100.384 227.936 224.192 0 123.84-102.048 224.224-227.936 224.224-125.888 0-227.936-100.384-227.936-224.224C274.56 163.488 376.64 63.136 502.496 63.136L502.496 63.136zM502.496 63.136c125.888 0 227.936 100.384 227.936 224.192 0 123.84-102.048 224.224-227.936 224.224-125.888 0-227.936-100.384-227.936-224.224C274.56 163.488 376.64 63.136 502.496 63.136L502.496 63.136zM417.024 586.304l189.984 0c162.624 0 294.432 129.632 294.432 289.6l0 18.656c0 63.04-131.84 65.44-294.432 65.44l-189.984 0c-162.624 0-294.432-0.096-294.432-65.44l0-18.656C122.592 715.936 254.4 586.304 417.024 586.304L417.024 586.304zM417.024 586.304"
+                      fill="#272636"
+                      p-id="5474"
+                    ></path>
+                  </svg>
+                  <span>admin</span>
+                </a>
+              </li>
+            </ul>
+            <!-- 登录按钮 -->
+            <a href="#" class="loginBtn"> 登录 </a>
+          </div>
+        </div>
+
+        <!-- 推荐视频列表 -->
+        <div class="reommendVideo">
+          <h2>即将播放</h2>
+          <ul class="videoList">
+            <li class="videoItem">
+              <div class="videoImg">
+                <img src="../static/img/视频推荐图片/image (1).jpg" alt="" />
+                <span class="duration">12:11</span>
+              </div>
+              <div class="videoInfo">
+                <p class="videoTitle">
+                  曾经的我，低估了这个角色！情场上的千层套路！幼稚园的直男收
+                </p>
+                <div class="PlayInfo">
+                  <span class="videoPlayTime">70.4万次播放</span>
+                  <span class="afterTime">4天前</span>
+                </div>
+              </div>
+            </li>
+            <li class="videoItem">
+              <div class="videoImg">
+                <img src="../static/img/视频推荐图片/image (1).jpg" alt="" />
+                <span class="duration">12:11</span>
+              </div>
+              <div class="videoInfo">
+                <p class="videoTitle">
+                  曾经的我，低估了这个角色！情场上的千层套路！幼稚园的直男收
+                </p>
+                <div class="PlayInfo">
+                  <span class="videoPlayTime">70.4万次播放</span>
+                  <span class="afterTime">4天前</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/Route.js"></script>
+
+    <script
+      src="//unpkg.byted-static.com/xgplayer/2.31.2/browser/index.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      let player = new Player({
+        id: 'mse',
+        url: '../static/video/｜4K·60Hz｜Apple苹果2019宣传片《了不起的设计》.mp4',
+        autoplay: true,
+        volume: 0.6,
+        fitVideoSize: 'atuo',
+      })
+    </script>
+
+
+    <script src="../static/message.js-main/message.min.js"></script>
+    <script src="../js/videoDetil.js"></script>
+    <script src="../js/Route.js"></script>
+  </body>
+</html>

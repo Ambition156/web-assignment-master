@@ -1,0 +1,195 @@
+@import url('./publick.css');
+@import url('../static/icont/fonticiont/iconfont.css');
+
+.leftNav {
+  width: 972px !important;
+}
+
+.leftNavTop {
+  display: flex;
+}
+
+.leftNav-title {
+  margin-right: 64px;
+}
+
+.TopSearch {
+  width: 560px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #0c0d0f;
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-size: 13px;
+}
+.TopSearch input {
+  border: none;
+  font-size: 14px;
+  color: var(--theme-text-color);
+  font-weight: 500;
+  flex: 1;
+}
+.TopSearch input::placeholder {
+  color: var(--theme-text-color);
+  font-weight: 500;
+}
+.TopSearch input:focus {
+  outline: none;
+}
+.SerchBtn {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.SerchBtn span {
+  margin-left: 7px;
+}
+
+/* ---------------------- 小说阅读区域 ------------------------ */
+.imgList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imgItem {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.imgItem img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* ----------------------------- 右侧内容 ----------------------*/
+.rightContent {
+  width: 468px;
+}
+.rightTopNav .TopNav {
+  
+  width: 428px;
+}
+
+/*  图片详细信息 */
+.imgDetilInfo {
+  margin: 40px 0;
+  background-color: #fff;
+  padding: 20px 16px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.imgDetilInfo .imgTitle {
+  font-size: 24px;
+  font-weight: 500;
+
+}
+.imgDetilInfo .shouchang {
+  font-size: 16px;
+  color: var(--theme-smText-color);
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.imgDetilInfo .shouchang .Collect {
+  display: none;
+}
+.imgDetilInfo .shouchang i {
+  margin-right: 6px;
+}
+.imgDetilInfo .shouchang i svg {
+  width: 24px;
+  height: 24px;
+}
+
+.imgDetilInfo ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.imgDetilInfo ul li {
+  width: 50%;
+  margin-bottom: 10px;
+  color: var(--theme-smText-color);
+}
+.imgDetilInfo .downloadBtn {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  background: var(--theme-bg-color);
+}
+.imgDetilInfo .shareBtn {
+  color: var(--theme-smText-color);
+  background: none;
+  border: 2px solid var(--theme-smText-color);
+}
+
+
+.table {
+   border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 16px;
+}
+.tableTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.tableTitle  p {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--theme-text-color);
+}
+.tableTitle a {
+  display: flex;
+  align-items: center;
+}
+.tableTitle a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tableList {
+  margin-top: 20px;
+  color: var(--theme-smText-color);
+
+}
+.tableList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.tableList .tableItem {
+  float: left;
+  margin-right: 6px;
+  border: 2px solid var(--theme-smText-color);
+  padding: 4px 6px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.tableList .tableItem:hover {
+  color: var(--theme-text-color);
+  border-color: var(--theme-text-color);
+}
