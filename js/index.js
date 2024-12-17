@@ -88,7 +88,7 @@ window.onload = () => {
   const viodeItems = document.querySelectorAll('.RecommendedItem')
   Array.prototype.forEach.call(viodeItems, (item) => {
     item.onclick = (e) => {
-      location.href = '../pages/videoDetil.html'
+      location.href = '../web-assignment-master/pages/videoDetil.html'
     }
   })
 }
