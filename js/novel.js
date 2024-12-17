@@ -949,7 +949,7 @@ window.onload =  () => {
   const novelItems = novelList.querySelectorAll(".novelItem")
   Array.prototype.forEach.call(novelItems, (item) => {
     item.onclick = (e) => {
-      location.href = '../pages/novelDetil.html'
+      location.href = '../web-assignment-master/pages/novelDetil.html'
     }
   })
 }
