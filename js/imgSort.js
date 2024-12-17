@@ -1347,7 +1347,7 @@ window.onload =  () => {
   const novelItems = imgList.querySelectorAll('.imgItem')
   Array.prototype.forEach.call(novelItems, (item) => {
     item.onclick = (e) => {
-      location.href = '../web-assignment-master/pages/imgDetil.html'
+      location.href = '../pages/imgDetil.html'
     }
   })
 }

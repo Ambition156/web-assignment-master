@@ -111,7 +111,7 @@ function registerClick() {
             }))
             
             // 跳转到主页
-            location.href = '../web-assignment-master/index.html'
+            location.href = '../index.html'
 
           } else {
             // 切换至登录页面
