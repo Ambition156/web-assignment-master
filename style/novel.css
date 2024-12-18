@@ -25,7 +25,9 @@
 .classifyNav .classifyList .active {
   color: var(--theme-Text-color);
 }
-
+.leftNav-title .logo{
+  border-radius: 10px;
+  }
 /* 文章列表 */
 .novelList::after {
   content: "";

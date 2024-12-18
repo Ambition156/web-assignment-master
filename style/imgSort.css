@@ -32,6 +32,9 @@
   display: block;
   clear: both;
 }
+.leftNav-title .logo{
+  border-radius: 10px;
+  }
 .imgList .imgItem {
   float: left;
   width: 280px;

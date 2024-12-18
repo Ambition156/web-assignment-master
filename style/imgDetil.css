@@ -47,7 +47,9 @@
 .SerchBtn span {
   margin-left: 7px;
 }
-
+.leftNav-title .logo{
+  border-radius: 10px;
+  }
 /* ---------------------- 小说阅读区域 ------------------------ */
 .imgList {
   display: flex;

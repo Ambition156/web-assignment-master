@@ -16,7 +16,9 @@
   height: 20px;
   -webkit-line-clamp: 1;
 }
-
+.leftNav-title .logo{
+  border-radius: 10px;
+  }
 .swiper {
   transform: translateX(-12px);
   margin-top: 25px;

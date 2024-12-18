@@ -13,7 +13,9 @@
 .leftNav-title {
   margin-right: 64px;
 }
-
+.leftNav-title .logo{
+border-radius: 10px;
+}
 .TopSearch {
   width: 560px;
   height: 45px;
