@@ -91,6 +91,9 @@ getUrl(leftNavList[0], '/web-assignment-master/index.html')
 getUrl(leftNavList[3], '/web-assignment-master/pages/novel.html')
 // 壁纸
 getUrl(leftNavList[4], '/web-assignment-master/pages/imgSort.html')
+
+getUrl(leftNavList[4], '/web-assignment-master/pages/food.html')
+
 // VIP
 getUrl(VIP, '/web-assignment-master/pages/Vip.html')
 
