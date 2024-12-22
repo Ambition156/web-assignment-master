@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/nolimits4web/swiper/issues"
   },
-  "bundleDependencies": false,
+  "bundleDependencies": [],
   "deprecated": false,
   "description": "Most modern mobile touch slider and framework with hardware accelerated transitions",
   "engines": {
@@ -232,5 +232,8 @@
     }
   },
   "typings": "swiper.d.ts",
-  "version": "11.0.3"
+  "version": "11.0.3",
+  "dependencies": {
+    "swiper": "file:"
+  }
 }

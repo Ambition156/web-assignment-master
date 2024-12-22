@@ -93,5 +93,8 @@
       "npm run lint:fix",
       "npm run prettier:write"
     ]
+  },
+  "dependencies": {
+    "@yaohaixiao/message.js": "file:"
   }
 }
